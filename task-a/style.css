@@ -1,0 +1,17 @@
+/*
+Author: Juuso Herlevi
+Date: 2025-09-25
+*/
+
+body {
+  background-color: rgb(247, 168, 137);
+}
+
+h1 {
+  color: rgb(29, 29, 32);
+  font-size: 40px;
+}
+
+p {
+  color: rgb(40, 40, 44);
+}
