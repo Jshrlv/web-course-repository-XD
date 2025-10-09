@@ -1,0 +1,43 @@
+/*
+Author: Juuso Herlevi
+Date: 2025-10-09
+*/
+
+h1 {
+  color: rgb(231, 69, 40);
+  text-align: center;
+}
+p {
+  font-size: 16px;
+  color: #d18242;
+}
+.box {
+  border: 2px solid #999;
+  padding: 10px;
+  margin: 10px 0;
+}
+.highlight {
+  background-color: #ffeb99;
+  padding: 10px;
+  margin: 10px 0;
+}
+#special-message {
+  color: rgb(29, 6, 6);
+  font-weight: bold;
+  text-decoration: underline;
+}
+h1, h2, h3 {
+  font-family: Arial;
+}
+section ul li {
+  color: rgb(200, 212, 85);
+  font-style: italic;
+}
+a[target="_blank"] {
+  color: rgb(105, 56, 15);
+  font-weight: bold;
+}
+img[alt] {
+  border: 3px solid rgb(80, 39, 20);
+  border-radius: 10px;
+}
