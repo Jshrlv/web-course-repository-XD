@@ -92,24 +92,33 @@ body {
   margin-top: 0.5rem;
 }
 
-.controls-title,
+.controls-title, 
 .student-info-title {
   margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
 }
 
-.form-row {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  margin: 0.5rem 0;
-}
-
 .form-row input[type="text"] {
-  flex: 1 1 auto;
+  flex: 0 0 220px;
+  max-width: 220px;  
   padding: 0.45rem 0.6rem;
   border: 1px solid var(--border);
   border-radius: 6px;
+}
+
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="date"] {
+  flex: 1 1 40%;     
+  max-width: 200px;   
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.form-row input[type="checkbox"] {
+  flex: 0 0 auto;    
+  margin-right: 0.5rem;
 }
 
 .days-group {
