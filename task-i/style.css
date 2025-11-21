@@ -1,0 +1,191 @@
+/*
+Author: Juuso Herlevi
+Date: 2025-11-21
+*/
+
+:root {
+  --primary-color: #dd6363;
+  --secondary-color: #264653;
+  --accent-color: #e76f51;
+  --bg-color: #f8f9fa;
+  --text-color: #1f2937;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: var(--secondary-color);
+  padding: 1rem 2rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  background: linear-gradient(120deg, #ec835ae1, #e9ecef);
+}
+
+.hero-content {
+  flex: 1 1 300px;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  margin-bottom: 1rem;
+}
+
+.cta-btn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  background-color: #e99080;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain; 
+  background-color: #f6f8fb; 
+  border-radius: var(--radius);
+  display: block;
+}
+
+.product-card h3 {
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  font-size: 1.2rem;     
+}
+
+.feature-list {
+  list-style: disc;
+  margin-left: 1.5rem;
+  max-width: 700px;
+}
+
+.feature-list li {
+  margin-bottom: 0.75rem;
+}
+
+.cta-section {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.cta-section a {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.site-footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1.5rem 2rem;
+}
+
+.site-footer ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-content, .hero-image {
+    flex: 1 1 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
