@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Registration Page</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Weekly Timetable</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="index.js"></script>
 </head>
 
 <body>
   <!--
     Author: Juuso Herlevi
-    Date: 2025-11-07
+    Date: 2025-11-14
   -->
 
   <header class="site-header">
-    <h1>Registration Page</h1>
+    <h1>Registeration page</h1>
   </header>
 
   <main class="content">
@@ -30,7 +30,7 @@
 
       <!-- Registration stuff -->
       <section class="controls" aria-label="Registration Form">
-        <h2 class="controls-title">Register New Entry</h2>
+        <h2 class="controls-title">Add Participant</h2>
         <form id="registrationForm" novalidate>
             <input type="hidden" id="timestamp" name="timestamp">
             <div class="form-row">
@@ -53,12 +53,12 @@
                 <input id="birthDate" name="birthDate" type="date" required>
                 <small class="error-message" id="birthError"></small>
             </div>
-            <div class="form-row-checkbox">
-              <label>
-                <input id="terms" name="terms" type="checkbox" required>
-                I accept the terms and conditions
-              </label>
-              <small class="error-message" id="termsError"></small>
+            <div class="form-row">
+                <label>
+                    <input id="terms" name="terms" type="checkbox" required>
+                    I accept the terms and conditions
+                </label>
+                <small class="error-message" id="termsError"></small>
             </div>
             <div class="form-row">
                 <button type="submit" class="btn">Submit</button>

@@ -1,6 +1,6 @@
 /*
 Author: Juuso Herlevi
-Date: 2025-11-07
+Date: 2025-11-14
 */
 
 /* COLOR GUIDELINES
@@ -98,35 +98,26 @@ body {
   font-size: 1.1rem;
 }
 
-.form-row {
-  display: flex;
-  align-items: center;
-  margin: 0.5rem 0;
-}
-
-.form-row label {
-  min-width: max-content; 
-  margin-right: 0.5rem;   
-}
-
-.form-row input[type="text"],
-.form-row input[type="email"],
-.form-row input[type="tel"],
-.form-row input[type="date"] {
-  flex: 1;                 
-  max-width: 250px;        
+.form-row input[type="text"] {
+  flex: 0 0 220px;
+  max-width: 220px;  
   padding: 0.45rem 0.6rem;
   border: 1px solid var(--border);
   border-radius: 6px;
 }
 
-.form-row-checkbox {
-  display: flex;
-  align-items: center;
-  margin: 0.5rem 0;
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="date"] {
+  flex: 1 1 40%;     
+  max-width: 200px;   
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
 }
 
-.form-row-checkbox input[type="checkbox"] {
+.form-row input[type="checkbox"] {
+  flex: 0 0 auto;    
   margin-right: 0.5rem;
 }
 
