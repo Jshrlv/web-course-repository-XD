@@ -192,11 +192,12 @@ section h2 {
 
 .example-image img {
   width: 100%;
-  height: 450px;     
-  object-fit: cover; 
-  border-radius: var(--radius);
+  max-width: 1200px;
+  height: auto;
   display: block;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
+  border-radius: var(--radius);
+  object-fit: cover;
 }
 
 .price {
